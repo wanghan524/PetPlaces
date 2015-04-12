@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751222561ADA484400A1506B /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 751222551ADA484400A1506B /* PopView.m */; };
+		751222581ADA485200A1506B /* PopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751222571ADA485200A1506B /* PopView.xib */; };
 		7544DABD1AD989EC004EE6F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544DABC1AD989EC004EE6F5 /* main.m */; };
 		7544DAC01AD989EC004EE6F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544DABF1AD989EC004EE6F5 /* AppDelegate.m */; };
 		7544DAC81AD989EC004EE6F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7544DAC71AD989EC004EE6F5 /* Images.xcassets */; };
@@ -32,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		751222541ADA484400A1506B /* PopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopView.h; sourceTree = "<group>"; };
+		751222551ADA484400A1506B /* PopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView.m; sourceTree = "<group>"; };
+		751222571ADA485200A1506B /* PopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopView.xib; sourceTree = "<group>"; };
 		7544DAB71AD989EC004EE6F5 /* PetPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7544DABB1AD989EC004EE6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7544DABC1AD989EC004EE6F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		751222531ADA482B00A1506B /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				751222541ADA484400A1506B /* PopView.h */,
+				751222551ADA484400A1506B /* PopView.m */,
+				751222571ADA485200A1506B /* PopView.xib */,
+			);
+			name = PopView;
+			sourceTree = "<group>";
+		};
 		7544DAAE1AD989EC004EE6F5 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +200,7 @@
 		7544DAEF1AD99B5F004EE6F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				751222531ADA482B00A1506B /* PopView */,
 				7544DAF71AD9A954004EE6F5 /* Menus */,
 			);
 			name = View;
@@ -319,6 +335,7 @@
 			files = (
 				EF46E4721ADA12B800E59FD0 /* EditViewController.xib in Resources */,
 				EF46E4791ADA178400E59FD0 /* EnterMianViewController.xib in Resources */,
+				751222581ADA485200A1506B /* PopView.xib in Resources */,
 				7544DAC81AD989EC004EE6F5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +357,7 @@
 				7544DAF61AD9A75A004EE6F5 /* LeftMenus.m in Sources */,
 				7544DAC01AD989EC004EE6F5 /* AppDelegate.m in Sources */,
 				7544DAFB1AD9A98D004EE6F5 /* MenusCell.m in Sources */,
+				751222561ADA484400A1506B /* PopView.m in Sources */,
 				EF46E4711ADA12B800E59FD0 /* EditViewController.m in Sources */,
 				7544DABD1AD989EC004EE6F5 /* main.m in Sources */,
 				7544DAE51AD98BE8004EE6F5 /* ParentViewController.m in Sources */,
