@@ -81,6 +81,18 @@ CGFloat navHeight;
     self.residuHeigth = SCREEN_HEIGHT - navHeight;
     
     [self.profileButton addTarget:self action:@selector(profileBtnClickOrGestureClip:) forControlEvents:UIControlEventTouchUpInside];
+    [self.backButton addTarget:self action:@selector(backBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    
+}
+
+-(void)backBtnClick:(UIButton *)sender
+{
+    if([self.navigationController.viewControllers count] > 0)
+    {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
     
 }
 
@@ -88,6 +100,7 @@ CGFloat navHeight;
 {
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

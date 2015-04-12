@@ -21,7 +21,7 @@
 
     
     [self hideCustomeNav];
-    // Do any additional setup after loading the view from its nib.
+    
 }
 
 
@@ -44,20 +44,27 @@
 - (IBAction)EditButtonclick:(id)sender {
     
     EnterMianViewController *enterVC = [[EnterMianViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:enterVC];
     
-    [self presentViewController:enterVC animated:YES completion:nil];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (IBAction)SelecteDog:(id)sender {
     
     EnterMianViewController *enterVC = [[EnterMianViewController alloc] init];
     
-    [self presentViewController:enterVC animated:YES completion:nil];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:enterVC];
+    
+    [self presentViewController:nav animated:YES completion:nil];
+
 }
 
 - (IBAction)SelectedCat:(id)sender {
     EnterMianViewController *enterVC = [[EnterMianViewController alloc] init];
     
-    [self presentViewController:enterVC animated:YES completion:nil];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:enterVC];
+    
+    [self presentViewController:nav animated:YES completion:nil];
+
 }
 @end

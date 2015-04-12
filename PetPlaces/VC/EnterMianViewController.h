@@ -7,7 +7,20 @@
 //
 
 #import "ParentViewController.h"
+#import "PopView.h"
+@interface EnterMianViewController : ParentViewController<dismissDelegate>
+@property(nonatomic,strong)PopView *pop;
 
-@interface EnterMianViewController : ParentViewController
+- (IBAction)petAddBtnClick:(id)sender;
+
+- (IBAction)petOneBtnClick:(id)sender;
+
+- (IBAction)petTwoBtnClick:(id)sender;
+
+- (IBAction)petThreeBtnClick:(id)sender;
+
+- (IBAction)dogBtnClick:(id)sender;
+
+- (IBAction)catBtnClick:(id)sender;
 
 @end

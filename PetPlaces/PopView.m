@@ -9,5 +9,22 @@
 #import "PopView.h"
 
 @implementation PopView
+-(instancetype)initWithFrame:(CGRect)frame
+{
+    if(self = [super initWithFrame:frame])
+    {
+        
+    }
+    return self;
+}
 
+
+- (IBAction)dismissBtnClick:(id)sender
+{
+    [self removeFromSuperview];
+    if([self.delegate respondsToSelector:@selector(dismissDarkView)])
+    {
+        [self.delegate performSelector:@selector(dismissDarkView)];
+    }
+}
 @end

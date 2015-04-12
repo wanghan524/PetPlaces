@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol dismissDelegate <NSObject>
+
+-(void)dismissDarkView;
+
+@end
+
 @interface PopView : UIView
+@property(nonatomic,weak)id<dismissDelegate>delegate;
+
+-(instancetype)initWithFrame:(CGRect)frame;
+- (IBAction)dismissBtnClick:(id)sender;
 
 @end
